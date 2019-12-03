@@ -1,2 +1,2 @@
 # neco
-html/css/jsがめいんになるもの
+html/css/jsのおべんきょう
