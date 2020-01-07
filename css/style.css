@@ -48,6 +48,26 @@ nav.header_menu li {
 
 nav.header_menu li a {}
 
+/* メイン */
+#main {
+  padding-top: 50px;
+  width: 70%;
+  margin: auto;
+}
+
+.main_in {
+  padding: 10px;
+  background: pink;
+}
+
+p#au {
+  padding-top: 900px;
+}
+
+.main_in span {
+  line-height: 20px;
+}
+
 /* レスポンシブ＠700px */
 @media screen and (max-width:700px) {
 
@@ -62,9 +82,7 @@ nav.header_menu li a {}
     margin-left: auto;
   }
 
-  .header_moblie-menu {
-    background: pink;
-  }
+  .header_moblie-menu {}
 
   /* checkbox削除 */
   #burger-cb {
@@ -76,7 +94,8 @@ nav.header_menu li a {}
     display: inline-block;
     vertical-align: middle;
     height: 20px;
-    width: 40px;
+    width: 25px;
+    padding: 10px;
   }
 
   /* ハンバーガーアイコンをCSSだけで表現 */
@@ -101,44 +120,27 @@ nav.header_menu li a {}
 
   /* 中身 */
   #burger-menu {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 999;
     width: 700px;
     max-width: 100%;
     height: 50px;
-    background: gray;
     top: 50px;
-    /*左に隠しておく*/
-  }
-
-  /* out */
-  #burger-cb:checked~#burger-close {
+    background: #fff;
     display: none;
   }
 
-  /* in */
-  #burger-cb:checked~#burger-menu {
-    display: block;
-    opacity: .8;
-    transition: .3s ease-in-out;
+  /* 中身リスト */
+  .header_menu-moblie {}
+
+  .header_menu-moblie ul {
+    list-style: none;
   }
 
-  /* メイン */
-  #main {
-    padding-top: 50px;
-    width: 70%;
-    margin: auto;
+  .header_menu-moblie li {
+    float: left;
+    padding: 0 10px;
   }
-
-  .main_in {
-    padding: 10px;
-    background: pink;
-    line-height: 400px;
-  }
-
-  .main_in span {
-    line-height: 20px;
-  }
+}

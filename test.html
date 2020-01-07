@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <style type="text/css">
+    #mhead {
+      display: block;
+      z-index: 1000;
+      width: 100%;
+      position: fixed;
+      top: 0;
+    }
+
+    dl#slidetoggle_menu.mnavi {
+      width: 100%;
+    }
+
+    #slide_button {
+      display: inline-block;
+      vertical-align: top;
+      zoom: 1;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      float: left;
+      text-align: center;
+      padding: 15px 5px;
+      background: #c9a063;
+      color: #fff;
+      height: 52px;
+      border-right: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+    }
+
+    #slide_men {
+      width: 100%;
+    }
+
+    #mhead dl.mnavi ul {
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    #mhead dl.mnavi li {
+      border-bottom: 1px solid #eee;
+      padding: 7px;
+    }
+  </style>
+
+  <script type="text/javascript">
+    $(function() {
+      $("#slidetoggle_button").on("click", function() {
+        $("#slidetoggle_menu").slideToggle();
+        $("#slidetoggle_menu").toggleClass("active");
+      });
+    });
+  </script>
+  <title>test</title>
+</head>
+
+<body>
+  <a id="slidetoggle_button" href="#">トグルボタン</a>
+  <ul id="slidetoggle_menu">
+    <li>メニュー</li>
+    <li>メニュー</li>
+    <li>メニュー</li>
+  </ul>
+</body>
+</html>
