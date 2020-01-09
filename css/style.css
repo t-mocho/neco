@@ -89,33 +89,55 @@ p#au {
     display: none;
   }
 
-  /* ハンバーガーアイコンの位置 */
-  #burger-icon {
-    display: inline-block;
-    vertical-align: middle;
-    height: 20px;
-    width: 25px;
-    padding: 10px;
-  }
-
   /* ハンバーガーアイコンをCSSだけで表現 */
-  #burger-icon span, #burger-icon span:before, #burger-icon span:after {
+  #burger-icon,
+  #burger-icon span {
+    display: inline-block;
+    transition: all .4s;
+    box-sizing: border-box;
+  }
+
+  #burger-icon {
+    position: relative;
+    width: 30px;
+    height: 44px;
+    right: 10px;
+    top: 12px;
+  }
+
+  #burger-icon span {
     position: absolute;
-    height: 2px;
-    width: 25px;
-    border-radius: 3px;
-    background: #555;
-    display: block;
-    content: '';
-    cursor: pointer;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
   }
 
-  #burger-icon span:before {
-    bottom: -8px;
+  #burger-icon span:nth-of-type(1) {
+    top: 0;
   }
 
-  #burger-icon span:after {
-    bottom: -16px;
+  #burger-icon span:nth-of-type(2) {
+    top: 10px;
+  }
+
+  #burger-icon span:nth-of-type(3) {
+    top: 20px;
+  }
+
+  #burger-icon.active span:nth-of-type(1) {
+    -webkit-transform: translateY(20px) rotate(-45deg);
+    transform: translateY(20px) rotate(-45deg);
+  }
+
+  #burger-icon.active span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  #burger-icon.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-20px) rotate(45deg);
+    transform: translateY(-20px) rotate(45deg);
   }
 
   /* 中身 */
