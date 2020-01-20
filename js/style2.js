@@ -39,3 +39,25 @@ $(function() {
     return false;
   });
 });
+
+//
+$(function() {
+  // 指定クラス を visibility/hiddenで非表示にするよ
+  $('.photo_box li').css('visibility', 'hidden');
+  $(window).scroll(function() {
+    var windowHeight = jQuery(window).height(),
+      topWindow = jQuery(window).scrollTop();
+    $('.photo_box li').each(function(i) {
+      var targetPosition = jQuery(this).offset().top;
+      if (topWindow > targetPosition - windowHeight + 100) {
+        $(this).addClass("fadeInDown");
+      }
+    });
+  });
+});
+
+// 画像
+
+/******************
+IEはこちら
+*******************/
