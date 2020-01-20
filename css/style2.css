@@ -1,0 +1,110 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+}
+
+#title {
+  padding: 10px;
+  background: pink;
+  font-size: 30px;
+  height: 140px;
+}
+
+#menu {
+  background: #fff;
+}
+
+#menu ul {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#menu li {
+  padding: 10px;
+}
+
+/*メニュー固定*/
+.is-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background: pink;
+}
+
+.space {
+  height: 500px;
+  background: #eee;
+}
+
+.title_line {
+  background: skyblue;
+  font-size: 25px;
+  padding: 10px;
+  text-align: center;
+}
+
+.box {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  padding: 10px 0;
+}
+
+.box_text p {
+  padding: 10px 0;
+  margin: 0;
+  text-align: center;
+}
+
+.box_text table {
+  width: 80%;
+  margin: 0 auto;
+  background: #ccc;
+}
+
+.box_text tbody {}
+
+.box_text tr {}
+
+.box_text th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.box_text th {
+  background: skyblue;
+}
+
+.box_text td {
+  background: pink;
+}
+
+.photo_box img {
+  width: 200px;
+  border-radius: 10%;
+}
+
+.photo_box {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo_box li {
+  padding: 5px;
+}
+
+.photo_box a {
+  opacity: 0.8;
+}
+
+.photo_box a:hover {
+  opacity: 1;
+}
