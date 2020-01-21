@@ -57,7 +57,19 @@ $(function() {
 });
 
 // 画像
+$(function(){
+  $(".photo_box img").click(function() {
+    $("#graydisplay").html($(this).prop('outerHTML'));
+    $("#graydisplay").fadeIn(200);
+  });
+  $("#graydisplay, #graydisplay img").click(function() {
+    $("#graydisplay").fadeOut(200);
+  });
+});
 
-/******************
-IEはこちら
-*******************/
+// 画像リンク無効
+$(function(){
+	$('.photo_box a').click(function(){
+		return false;
+	})
+});

@@ -152,23 +152,26 @@ body, html {
 }
 
 
-.popup:focus, .popup:active {
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    margin:auto;
-    height: auto;
-    z-index: 100;
-    background: #fff;
-    padding: 20px;
-    outline: 1px solid #aaa;
-    max-width:60vw;/* 画像が大きい場合は、適宜調整 */
+
+
+
+#graydisplay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
 }
-.popup {
-    height: 96px;
-    width:auto;
-    cursor: pointer;
-    display: inline;
+#graydisplay img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 70%;
+  height: auto;
+  border-radius: 0;
 }
