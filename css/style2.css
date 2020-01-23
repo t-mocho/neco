@@ -4,6 +4,7 @@ body, html {
   background: #ccc;
 }
 
+/*タイトルヘッダ*/
 #title {
   padding: 10px;
   background: pink;
@@ -11,6 +12,7 @@ body, html {
   height: 140px;
 }
 
+/*メニュー*/
 #menu {
   background: #fff;
 }
@@ -28,7 +30,7 @@ body, html {
   padding: 10px;
 }
 
-/*メニュー固定*/
+/*メニュー途中固定*/
 .is-fixed {
   position: fixed;
   top: 0;
@@ -38,11 +40,13 @@ body, html {
   background: pink;
 }
 
+/*各項目の隙間*/
 .space {
   height: 500px;
   background: #eee;
 }
 
+/*項目見出し*/
 .title_line {
   background: skyblue;
   font-size: 25px;
@@ -50,6 +54,15 @@ body, html {
   text-align: center;
 }
 
+/*項目サブ見出し*/
+.title_line-sub {
+  background: skyblue;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+}
+
+/*本文box*/
 .box {
   background: #fff;
   margin: 0;
@@ -57,41 +70,126 @@ body, html {
   padding: 10px 0;
 }
 
+/*本文box内テキスト*/
+.box_text {}
+
 .box_text p {
   padding: 10px 0;
   margin: 0;
+}
+
+/*profileテキスト*/
+.box_text-pro {
   text-align: center;
 }
 
-.box_text table {
-  width: 80%;
-  margin: 0 auto;
-  background: #ccc;
+.box_text-pro p {
+  padding: 5px;
 }
 
-.box_text tbody {}
+.box_text-pro span {
+  font-size: 13px;
+}
 
-.box_text tr {}
+/*profile画像*/
+.pro_img {
+  width: 70px;
+  height: auto;
+}
 
-.box_text th, td {
-  border: 1px solid black;
+/*profilebox*/
+.pro_box {
+  padding: 20px;
+}
+
+.pro_box table {
+  width: 40%;
+  margin: 0 auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.pro_box th, td {
   padding: 10px;
 }
 
-.box_text th {
+.pro_box th {
+  border: 0;
+  border-bottom: 3px solid skyblue;
+}
+
+.pro_box td {
+  border: 0;
+  border-bottom: 3px solid #ddd;
+}
+
+/*スキル*/
+#skill {
+  width: 60%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.skill_box {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.skill_box-item {
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.skill_box-item p {
+  padding: 0;
+}
+
+/*アイコン*/
+.skill_box img {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
   background: skyblue;
 }
 
-.box_text td {
-  background: pink;
+/*星*/
+.star {
+  margin: auto;
+  position: relative;
+  width: 5em;
+  font-size: 20px;
 }
 
+.star-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+}
+
+.star-back {
+  color: #ccc;
+}
+
+/*skill画像*/
+.skill_box-table th img {
+  width: 60px;
+  height: auto;
+  background: #eee;
+  border-radius: 50%;
+}
+
+/*photo画像をスライドイン*/
 .photo_box img {
   width: 200px;
   border-radius: 10%;
   animation: fadeIn 2s ease 0s 1 normal;
 }
 
+/*photo画像一覧*/
 .photo_box {
   list-style: none;
   display: flex;
@@ -151,10 +249,7 @@ body, html {
   }
 }
 
-
-
-
-
+/*photo画像popup*/
 #graydisplay {
   display: none;
   position: fixed;
@@ -162,8 +257,9 @@ body, html {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0, 0, 0, 0.45);
 }
+
 #graydisplay img {
   position: absolute;
   top: 0;
@@ -171,7 +267,7 @@ body, html {
   left: 0;
   right: 0;
   margin: auto;
-  width: 70%;
+  width: 50%;
   height: auto;
   border-radius: 0;
 }
