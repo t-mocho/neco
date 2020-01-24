@@ -22,7 +22,7 @@
         <li><a href="#about">about</a></li>
         <li><a href="#photo">photo</a></li>
         <li><a href="blog">blog</a></li>
-        <li><a href="photo">contact</a></li>
+        <li><a href="#contact">contact</a></li>
       </ul>
     </nav>
   </div>
@@ -38,28 +38,32 @@
         <div class="box_text-pro">
           <img src="image/profile.png" class="pro_img">
           <p>m.tanida</p>
-          <span>猫アレルギーだけどねこがすき。</span>
+          <span>座右の銘は「人生一度きり」<br>やりたいことぜーんぶやるゾ</span>
+          <div class="box_text-pro-main">
+            芸能系の制作業務から一転、人材営業を担当。<br>
+            その後エンジニアに転職しJavaをメインに運用保守担当（now）<br>
+            業務中にフロントの楽しさに触れてキャリアチェンジを決意。<br>
+            現在はフロントエンジニアを目指し、HTML/CSS/JavaScriptやJQuery、Vue.jsを勉強中です。
+          </div>
         </div>
         <div class="pro_box">
           <table>
-            <tbody>
-              <tr>
-                <th>Name</th>
-                <td>watasi</td>
-              </tr>
-              <tr>
-                <th>Bashday</th>
-                <td>04/02</td>
-              </tr>
-              <tr>
-                <th>Address</th>
-                <td>Tokyo Nerimaku hogehoge</td>
-              </tr>
-              <tr>
-                <th>Skill</th>
-                <td>Java/JQuery/HTML5/CSS3</td>
-              </tr>
-            </tbody>
+            <tr>
+              <th>Name</th>
+              <td>m.tanida</td>
+            </tr>
+            <tr>
+              <th>Bashday</th>
+              <td>199*/04/02</td>
+            </tr>
+            <tr>
+              <th>Address</th>
+              <td>Tokyo Nerimaku</td>
+            </tr>
+            <tr>
+              <th>Skill</th>
+              <td>Java/JavaScript/HTML5/CSS3</td>
+            </tr>
           </table>
         </div>
         <!-- スキル -->
@@ -72,22 +76,45 @@
               <img src="image/icon/java.png">
               <p>java</p>
               <div class="star">
-                <div class="star-front" style="width: 40%">★★★★★</div>
+                <div class="star-front" style="width: 53%">★★★★★</div>
                 <div class="star-back">★★★★★</div>
               </div>
-              <p class="skill_box-text">
-                はじめてさわったプログラミング言語。<br>
-                javaメインの運用保守でjunitとあわせてテスト作成～実施まで担当。
-              </p>
+              <div class="skill_box-item-text">
+                約1年半～業務で使用。（なお運用保守・・）<br>
+                転職して初めて触ったプログラミング言語。
+                Javaで改修した箇所をJUnit使用してテスト書いてます。
+                mockかくのたのしい。
+              </div>
             </div>
             <div class="skill_box-item">
               <img src="image/icon/javascript.png">
-              <p>javascriptkawaii</p>
+              <p>javascript</p>
+              <div class="star">
+                <div class="star-front" style="width: 40%">★★★★★</div>
+                <div class="star-back">★★★★★</div>
+              </div>
+              <div class="skill_box-item-text">
+                自己学習4か月～。<br>
+                フロントエンジニアを目指して自己学習。
+                Vue.jsでTodoリスト作成したり、JQueryを使って
+                アニメーションをつけたり、作ったものに
+                動きをつける過程がとっても楽しいのです。
+              </div>
             </div>
             <div class="skill_box-item">
               <img src="image/icon/html5.png">
               <img src="image/icon/css3.png">
-              <p>html5,css3kawaii</p>
+              <p>html5,css3</p>
+              <div class="star">
+                <div class="star-front" style="width: 60%">★★★★★</div>
+                <div class="star-back">★★★★★</div>
+              </div>
+              <div class="skill_box-item-text">
+                自己学習4か月～。<br>
+                ブロガー時代や趣味でwebページを作っていたときに触ってました。
+                触ってて一番楽しいのがHTML/CSS、すぐ反応してくれるとこがすき。
+                しかしIEののろいに涙しました。
+              </div>
             </div>
           </div>
         </div>
@@ -101,7 +128,7 @@
     <div class="title_line">PHOTO</div>
     <div class="box">
       <div class="box_text">
-        <p>わたしの好きな写真は以下だよ。</p>
+        <p>おさけがだいすきさ～♬</p>
         <ul class="photo_box">
           <!-- モーダル表示 -->
           <li><a href=""><img src="image/header.jpg"></a>
@@ -116,6 +143,7 @@
           <li><a href=""><img src="image/header.jpg"></a>
             <p>おねむだにゃーん</p>
           </li>
+          <!-- popup -->
           <div id="graydisplay"></div>
         </ul>
       </div>
@@ -123,10 +151,44 @@
   </div>
   <!-- スペース -->
   <div class="space"></div>
-  <!-- popup -->
 
+  <div id="contact">
+    <div class="title_line">CONTACT</div>
+    <div class="box">
+      <div class="box_text">
+        <p>お仕事や飲み会のおさそいは以下からどーぞ(^o^)hehe</p>
+        <div class="contact_box">
 
+          <form>
+            <ul>
+              <li>
+                <label>おなまえ</label>
+                <input type="text">
+              </li>
+              <li>
+                <label>めーるあどれす</label>
+                <input type="text">
+              </li>
+              <li>
+                <label>ないようよう</label>
+                <textarea></textarea>
+              </li>
+            </ul>
+          </form>
 
+        </div>
+      </div>
+    </div>
+    <!-- スペース -->
+    <div class="space"></div>
+  </div>
+  <!-- フッター -->
+  <div id="fotter">
+    <div class="fotter_box">
+      ポートフォリオ@m.tanida
+    </div>
+  </div>
+  </div>
 </body>
 
 </html>

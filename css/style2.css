@@ -2,6 +2,9 @@ body, html {
   margin: 0;
   padding: 0;
   background: #ccc;
+  font-family: YuGothic, "Yu Gothic", sans-serif, "メイリオ", sans-serif;
+  font-feature-settings: "palt";
+  letter-spacing: 0.1em;
 }
 
 /*タイトルヘッダ*/
@@ -71,7 +74,9 @@ body, html {
 }
 
 /*本文box内テキスト*/
-.box_text {}
+.box_text {
+  text-align: center;
+}
 
 .box_text p {
   padding: 10px 0;
@@ -79,16 +84,22 @@ body, html {
 }
 
 /*profileテキスト*/
-.box_text-pro {
-  text-align: center;
-}
-
 .box_text-pro p {
   padding: 5px;
 }
 
 .box_text-pro span {
   font-size: 13px;
+}
+
+.box_text-pro-main {
+  text-align: left;
+  padding: 13px;
+  font-size: 13px;
+  width: 30%;
+  margin: 15px auto;
+  background: #fafad2;
+  border-radius: 10%;
 }
 
 /*profile画像*/
@@ -142,8 +153,11 @@ body, html {
   border-radius: 20px;
 }
 
-.skill_box-item p {
-  padding: 0;
+.skill_box-item-text {
+  text-align: left;
+  width: 80%;
+  margin: auto;
+  font-size: 14px;
 }
 
 /*アイコン*/
@@ -182,6 +196,81 @@ body, html {
   border-radius: 50%;
 }
 
+/*問い合わせフォーム*/
+.contact_box {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding: 10px;
+}
+
+.contact_box form {
+  margin: 0;
+  padding: 10px;
+}
+
+.contact_box label {
+  display: block;
+  float: left;
+  width: 130px;
+}
+
+.contact_box ul {
+  padding: 0;
+}
+
+.contact_box li {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.contact_box input {
+  width: 250px;
+  height: 25px;
+  border: 1px solid #ff99cc;
+  border-radius: 10px;
+  padding: 3px;
+  box-shadow: 0px 0px 3px 3px rgba(255, 233, 233, 0.2), 0px 0px 3px 3px rgba(255, 233, 233, 0.2) inset;
+}
+
+.contact_box input:focus {
+  border: 1px solid #ffcccc;
+  outline: none;
+  box-shadow: 0 0 3px 3px rgba(255, 204, 204, .5);
+  transition: 0.3s;
+}
+
+.contact_box textarea {
+  width: 380px;
+  height: 140px;
+  border: 1px solid #ff99cc;
+  border-radius: 10px;
+  padding: 7px 3px;
+  box-shadow: 0px 0px 3px 3px rgba(255, 233, 233, 0.2), 0px 0px 3px 3px rgba(255, 233, 233, 0.2) inset;
+}
+
+.contact_box textarea:focus {
+  border: 1px solid #ffcccc;
+  outline: none;
+  box-shadow: 0 0 3px 3px rgba(255, 204, 204, .5);
+  transition: 0.3s;
+}
+
+/*フッター*/
+#fotter {
+  background: pink;
+  height: 80px;
+  width: 100%;
+  display: table;
+  text-align: center;
+}
+
+.fotter_box {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 13px;
+}
+
 /*photo画像をスライドイン*/
 .photo_box img {
   width: 200px;
@@ -194,6 +283,7 @@ body, html {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .photo_box li {
