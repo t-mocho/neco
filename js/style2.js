@@ -56,7 +56,7 @@ $(function() {
   });
 });
 
-// 画像
+// 画像\
 $(function(){
   $(".photo_box img").click(function() {
     $("#graydisplay").html($(this).prop('outerHTML'));

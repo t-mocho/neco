@@ -4,6 +4,7 @@ body, html {
   font-family: YuGothic, "Yu Gothic", sans-serif, "メイリオ", sans-serif;
   font-feature-settings: "palt";
   letter-spacing: 0.1em;
+  background: #ddd;
 }
 
 body {
@@ -26,7 +27,7 @@ body {
 
 #menu ul {
   display: flex;
-  height: 50px;
+  height: 60px;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -34,7 +35,23 @@ body {
 }
 
 #menu li {
-  padding: 10px;
+  width: 80px;
+  text-align: center;
+}
+
+#menu a {
+  color: #888;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  transition: .3s;
+  font-weight: bold;
+}
+
+#menu a:hover {
+  transform: rotate(5deg);
+  color: #333;
+  font-size: 18px;
 }
 
 /*メニュー途中固定*/
@@ -54,7 +71,8 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  opacity: 0.3;
+  opacity: 0.5;
+  transition: 1s;
 }
 
 .space02 {
@@ -62,17 +80,17 @@ body {
   background: url("../image/header.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
-  opacity: 0.3;
+  background-position: right;
+  opacity: 0.5;
 }
 
 .space03 {
   height: 300px;
-  background: url("../image/space.jpg") no-repeat;
+  background: url("../image/neko3.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 /*項目見出し*/
@@ -81,7 +99,7 @@ body {
   padding: 10px;
   text-align: center;
   background-image: linear-gradient(-45deg,
-      #DEEEF7 25%, #D9F4F7 25%, #D9F4F7 50%, #DEEEF7 50%, #DEEEF7 75%, #D9F4F7 75%, #D9F4F7);
+      #fff 25%, #D9F4F7 25%, #D9F4F7 50%, #fff 50%, #fff 75%, #D9F4F7 75%, #D9F4F7);
   background-size: 30px 30px;
 }
 
@@ -92,7 +110,7 @@ body {
   padding: 5px;
   text-align: center;
   background-image: linear-gradient(-45deg,
-      #DAF6E5 25%, #CEF3EC 25%, #CEF3EC 50%, #DAF6E5 50%, #DAF6E5 75%, #CEF3EC 75%, #DAF6E5);
+      #DAF6E5 25%, #fff 25%, #fff 50%, #DAF6E5 50%, #DAF6E5 75%, #fff 75%, #fff);
   background-size: 30px 30px;
 }
 
@@ -196,7 +214,8 @@ body {
   width: 50px;
   height: auto;
   border-radius: 50%;
-  background: skyblue;
+  padding: 10px;
+  border: 1px solid #aaa;
 }
 
 /*星*/
@@ -322,7 +341,8 @@ body {
 }
 
 .photo_box a {
-  opacity: 0.8;
+  opacity: 0.7;
+  transition: .3s;
 }
 
 .photo_box a:hover {
