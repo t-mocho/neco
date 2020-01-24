@@ -1,10 +1,14 @@
 body, html {
   margin: 0;
   padding: 0;
-  background: #ccc;
   font-family: YuGothic, "Yu Gothic", sans-serif, "メイリオ", sans-serif;
   font-feature-settings: "palt";
   letter-spacing: 0.1em;
+}
+
+body {
+  animation: fadeIn 2s ease 0s 1 normal;
+  -webkit-animation: fadeIn 2s ease 0s 1 normal;
 }
 
 /*タイトルヘッダ*/
@@ -44,17 +48,41 @@ body, html {
 }
 
 /*各項目の隙間*/
-.space {
-  height: 500px;
-  background: #eee;
+.space01 {
+  height: 300px;
+  background: url("../image/space.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  opacity: 0.3;
+}
+
+.space02 {
+  height: 300px;
+  background: url("../image/header.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  opacity: 0.3;
+}
+
+.space03 {
+  height: 300px;
+  background: url("../image/space.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  opacity: 0.3;
 }
 
 /*項目見出し*/
 .title_line {
-  background: skyblue;
   font-size: 25px;
   padding: 10px;
   text-align: center;
+  background-image: linear-gradient(-45deg,
+      #DEEEF7 25%, #D9F4F7 25%, #D9F4F7 50%, #DEEEF7 50%, #DEEEF7 75%, #D9F4F7 75%, #D9F4F7);
+  background-size: 30px 30px;
 }
 
 /*項目サブ見出し*/
@@ -63,6 +91,9 @@ body, html {
   font-size: 20px;
   padding: 5px;
   text-align: center;
+  background-image: linear-gradient(-45deg,
+      #DAF6E5 25%, #CEF3EC 25%, #CEF3EC 50%, #DAF6E5 50%, #DAF6E5 75%, #CEF3EC 75%, #DAF6E5);
+  background-size: 30px 30px;
 }
 
 /*本文box*/
@@ -360,4 +391,25 @@ body, html {
   width: 50%;
   height: auto;
   border-radius: 0;
+}
+
+/*ふわっとイン*/
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
 }
