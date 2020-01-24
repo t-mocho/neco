@@ -73,3 +73,10 @@ $(function(){
 		return false;
 	})
 });
+
+// 基本の記述
+$(document).ready(
+  function() {
+    $("body").niceScroll();
+  }
+);
