@@ -3,8 +3,10 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style2.css">
+  <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width:640px)">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
   <script src="js/jquery.nicescroll.js"></script>
   <script src="js/style2.js"></script>
@@ -26,6 +28,14 @@
         <li><a href="#contact">contact</a></li>
       </ul>
     </nav>
+  </div>
+  <!-- レスポンシブメニュー -->
+  <div id="mobile_menu">
+    <div class="mobile_menu-burger" href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
   <!-- スペース -->
   <div class="space01"></div>
@@ -63,7 +73,7 @@
             </tr>
             <tr>
               <th>Skill</th>
-              <td>Java/JavaScript/HTML5/CSS3</td>
+              <td>Java/JavaScript<br class="m-br">/HTML5/CSS3</td>
             </tr>
           </table>
         </div>
@@ -132,16 +142,16 @@
         <p>おさけがだいすきさ～♬</p>
         <ul class="photo_box">
           <!-- モーダル表示 -->
-          <li><a href=""><img src="image/header.jpg"></a>
+          <li><a href=""><img src="image/bg1.jpg"></a>
             <p>癒し猫</p>
           </li>
-          <li><a href=""><img src="image/header.jpg"></a>
+          <li><a href=""><img src="image/bg1.jpg"></a>
             <p>おねむだにゃー</p>
           </li>
-          <li><a href=""><img src="image/header.jpg"></a>
+          <li><a href=""><img src="image/bg1.jpg"></a>
             <p>癒し猫</p>
           </li>
-          <li><a href=""><img src="image/header.jpg"></a>
+          <li><a href=""><img src="image/bg1.jpg"></a>
             <p>おねむだにゃーん</p>
           </li>
           <!-- popup -->
@@ -159,24 +169,22 @@
       <div class="box_text">
         <p>お仕事や飲み会のおさそいは以下からどーぞ(^o^)hehe</p>
         <div class="contact_box">
-
           <form>
             <ul>
               <li>
-                <label>おなまえ</label>
+                <label>name:</label>
                 <input type="text">
               </li>
               <li>
-                <label>めーるあどれす</label>
+                <label>mail:</label>
                 <input type="text">
               </li>
               <li>
-                <label>ないようよう</label>
+                <label>comment:</label>
                 <textarea></textarea>
               </li>
             </ul>
           </form>
-
         </div>
       </div>
     </div>

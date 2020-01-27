@@ -12,12 +12,22 @@ body {
   -webkit-animation: fadeIn 2s ease 0s 1 normal;
 }
 
+/*レスポンシブbrタグ*/
+.m-br {
+  display: none;
+}
+
 /*タイトルヘッダ*/
 #title {
   padding: 10px;
   background: pink;
   font-size: 30px;
   height: 140px;
+}
+
+/*レスポンシブ*/
+#mobile_menu {
+  display: block;
 }
 
 /*メニュー*/
@@ -67,30 +77,35 @@ body {
 /*各項目の隙間*/
 .space01 {
   height: 300px;
-  background: url("../image/space.jpg") no-repeat;
+  background: url("../image/bg1.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  opacity: 0.5;
   transition: 1s;
 }
 
 .space02 {
   height: 300px;
-  background: url("../image/header.jpg") no-repeat;
+  background: url("../image/bg2.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: right;
-  opacity: 0.5;
 }
 
 .space03 {
   height: 300px;
-  background: url("../image/neko3.jpg") no-repeat;
+  background: url("../image/bg3.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  opacity: 0.5;
+}
+
+.space04 {
+  height: 300px;
+  background: url("../image/bg4.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 /*項目見出し*/
@@ -105,6 +120,7 @@ body {
 
 /*項目サブ見出し*/
 .title_line-sub {
+  margin: auto;
   background: skyblue;
   font-size: 20px;
   padding: 5px;
@@ -255,14 +271,14 @@ body {
 }
 
 .contact_box form {
-  margin: 0;
   padding: 10px;
+  width: 60%;
 }
 
 .contact_box label {
   display: block;
   float: left;
-  width: 130px;
+  width: 100px;
 }
 
 .contact_box ul {
@@ -275,7 +291,7 @@ body {
 }
 
 .contact_box input {
-  width: 250px;
+  width: 40%;
   height: 25px;
   border: 1px solid #ff99cc;
   border-radius: 10px;
@@ -291,7 +307,7 @@ body {
 }
 
 .contact_box textarea {
-  width: 380px;
+  width: 60%;
   height: 140px;
   border: 1px solid #ff99cc;
   border-radius: 10px;
@@ -325,7 +341,7 @@ body {
 .photo_box img {
   width: 200px;
   border-radius: 10%;
-  animation: fadeIn 2s ease 0s 1 normal;
+  animation: fadeIn .5s ease 0s 1 normal;
 }
 
 /*photo画像一覧*/
@@ -432,4 +448,10 @@ body {
   100% {
     opacity: 1
   }
+}
+
+/*レスポンシブ*/
+
+media screen (max-width: 560px) {
+
 }
